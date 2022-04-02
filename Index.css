@@ -39,3 +39,62 @@ footer {
   color: white;
   grid-area: footer;
 }
+
+/* Nav below */
+#hamburger-navigation {
+  width: 100%;
+  background: rgb(24, 21, 21);
+}
+
+/* Display flex  */
+#items {
+  display: flex;
+}
+
+#items a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #000000;
+}
+#items a:hover {
+  background: #af0d0d;
+}
+
+/* To hide hamburger */
+#hamburger-navigation label,
+#burger {
+  display: none;
+}
+
+.name:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.name:visited {
+  color: #ffffff;
+}
+
+.name:hover {
+  text-decoration: wavy;
+  background: #af0d0d;
+}
+
+.name:active {
+  color: beige;
+}
+
+.footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  background: rgb(76, 76, 89);
+}
