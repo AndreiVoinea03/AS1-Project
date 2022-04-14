@@ -2,44 +2,39 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(76, 76, 89);
 }
 body {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: auto;
   grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-  background-image: url(Sky.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 2000px;
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
 }
 header {
+  background-color: rgb(76, 76, 89);
   color: white;
-  padding: 20px;
+  padding: 30px;
   grid-area: header;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
-  font-size: 10px;
 }
 nav {
+  background-color: rgb(0, 0, 0);
   grid-area: nav;
 }
 
 main {
-  color: white;
+  background-color: rgb(76, 76, 89);
+  color: rgb(255, 255, 255);
   grid-area: main;
-  position: relative;
-  top: 140px;
-  right: 30px;
-  text-align: center;
 }
 
 footer {
+  background-color: darkgreen;
   color: white;
   grid-area: footer;
 }
@@ -47,6 +42,7 @@ footer {
 /* Nav below */
 #hamburger-navigation {
   width: 100%;
+  background: rgb(24, 21, 21);
 }
 
 /* Display flex  */
@@ -55,8 +51,8 @@ footer {
 }
 
 #items a {
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  background-color: #030303;
   text-align: center;
   flex-grow: 1;
   text-decoration: none;
@@ -64,8 +60,8 @@ footer {
   padding: 9px;
 }
 #items a:hover {
-  background: #f89b5d;
-  transition: 0.4s;
+  background: #b51515;
+  transition: 0.5s;
 }
 
 /* To hide hamburger */
@@ -86,9 +82,8 @@ footer {
 
 .name:hover {
   text-decoration: wavy;
-  background: #f89b5d;
-  transition: 0.4s;
-  padding: 5px;
+  background-color: rgb(255, 0, 0);
+  transition: 00.5s;
 }
 
 .name:active {
@@ -102,14 +97,7 @@ footer {
   width: 100%;
   /* Height of the footer*/
   height: 40px;
+  background: rgb(76, 76, 89);
 }
 
-main h1 {
-  font-size: 60px;
-  font-family: sans-serif;
-}
-
-main p {
-  margin-top: 20px;
-  font-family: sans-serif;
-}
+/* main text box editing */
