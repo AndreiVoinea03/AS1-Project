@@ -48,6 +48,7 @@ footer {
 /* Display flex  */
 #items {
   display: flex;
+  background-color: #030303;
 }
 
 #items a {

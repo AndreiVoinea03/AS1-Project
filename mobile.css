@@ -28,10 +28,11 @@ header {
 }
 nav {
   grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 main {
-  color: white;
+  color: rgb(206, 203, 203);
   grid-area: main;
   position: relative;
   top: 140px;
@@ -46,14 +47,15 @@ footer {
 
 #items a {
   display: block;
-  width: 100%;
+  position: relative;
+  bottom: 15px;
 }
 
 /* For icon */
 #hamburger-navigation label {
   color: white;
-  background: #eb1313;
-  padding: 9px;
+  background: #f89b5d;
+  padding: 8px;
   display: inline-block;
   font-style: italic;
   font-size: 1.3em;
@@ -68,13 +70,13 @@ footer {
 }
 
 .name:link {
-  color: rgb(255, 255, 255);
+  color: rgb(206, 203, 203);
   text-decoration: none;
   font-family: sans-serif;
 }
 
 .name:visited {
-  color: #ffffff;
+  color: rgb(206, 203, 203);
 }
 
 .name:hover {
@@ -85,7 +87,7 @@ footer {
 }
 
 .name:active {
-  color: beige;
+  color: rgb(206, 203, 203);
 }
 
 .footer {
@@ -98,11 +100,9 @@ footer {
 }
 
 main h1 {
-  font-size: 60px;
-  font-family: sans-serif;
+  display: none;
 }
 
 main p {
-  margin-top: 20px;
-  font-family: sans-serif;
+  display: none;
 }

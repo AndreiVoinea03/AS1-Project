@@ -20,23 +20,26 @@ body {
 }
 header {
   color: white;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
   grid-area: header;
   text-align: left;
-  margin-bottom: 10px;
   font-size: 10px;
 }
 nav {
   grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 main {
-  color: white;
+  color: rgb(206, 203, 203);
+
   grid-area: main;
+
   position: relative;
-  top: 140px;
-  right: 30px;
+
   text-align: center;
+  top: 150px;
 }
 
 footer {
@@ -50,22 +53,28 @@ footer {
 }
 
 /* Display flex  */
-#items {
-  display: flex;
+#items li {
+  display: inline;
+  padding-left: 200px;
 }
 
 #items a {
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
   flex-grow: 1;
   text-decoration: none;
   flex-basis: 0;
-  padding: 9px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
 }
+
 #items a:hover {
-  background: #f89b5d;
-  transition: 0.4s;
+  background-color: #f89b5d;
+  transition: 1.4s;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* To hide hamburger */
@@ -75,24 +84,26 @@ footer {
 }
 
 .name:link {
-  color: rgb(255, 255, 255);
+  color: rgb(206, 203, 203);
   text-decoration: none;
   font-family: sans-serif;
 }
 
 .name:visited {
-  color: #ffffff;
+  color: rgb(206, 203, 203);
 }
 
 .name:hover {
   text-decoration: wavy;
   background: #f89b5d;
-  transition: 0.4s;
-  padding: 5px;
+  transition: 1.5s;
+  padding: 10px;
+  padding-left: 10px;
 }
 
 .name:active {
-  color: beige;
+  color: rgb(206, 203, 203);
+  text-decoration: solid;
 }
 
 .footer {
@@ -105,8 +116,9 @@ footer {
 }
 
 main h1 {
-  font-size: 60px;
+  font-size: 30px;
   font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 main p {
