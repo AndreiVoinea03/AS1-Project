@@ -34,9 +34,6 @@ nav {
 main {
   color: rgb(206, 203, 203);
   grid-area: main;
-  position: relative;
-  top: 140px;
-  right: 30px;
   text-align: center;
 }
 
@@ -47,8 +44,7 @@ footer {
 
 #items a {
   display: block;
-  position: relative;
-  bottom: 15px;
+  transform: translate(0px, -30px);
 }
 
 /* For icon */
@@ -91,18 +87,14 @@ footer {
 }
 
 .footer {
-  position: fixed;
-  padding: 10px 10px 0px 10px;
-  bottom: 0;
-  width: 100%;
-  /* Height of the footer*/
-  height: 40px;
+  transform: translate(0px, 410px);
 }
 
 main h1 {
-  display: none;
+  transform: translate(0px, 100px);
+  text-transform: uppercase;
 }
 
 main p {
-  display: none;
+  transform: translate(0px, 100px);
 }
