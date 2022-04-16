@@ -19,20 +19,18 @@ header {
   padding: 50px;
   grid-area: header;
   text-align: center;
-  position: relative;
 }
 main {
   background-color: rgb(255, 255, 255);
-  color: white;
   grid-area: main;
-  padding: 60px;
+  padding: 150px;
 }
 
 footer {
   background-color: darkgreen;
   color: white;
   grid-area: footer;
-  transform: translate(0px, 300px);
+  transform: translate(0px, 0px);
 }
 
 .intro-text {
@@ -47,4 +45,61 @@ header p {
   transform: translate(0px, -15px);
   font-size: 15px;
   color: black;
+}
+
+main h1 {
+  font-size: 18px;
+  transform: translate(-100px, -160px);
+}
+
+.struggle-text {
+  transform: translate(90px, -160px);
+}
+
+.imgcode {
+  transform: translate(30px, -145px);
+  padding-bottom: 150px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.imghamburger {
+  transform: translate(100px, -148px);
+  padding-bottom: 150px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.hamburger-text {
+  transform: translate(590px, -140px);
+}
+
+.imgstudy {
+  transform: translate(260px, -100px);
+  padding-bottom: 150px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-studying {
+  transform: translate(350px, -530px);
+}
+
+#studying-blog {
+  transform: translate(265px, -265px);
+}
+
+.studyingdate-blog {
+  transform: translate(265px, -270px);
+}
+
+#hamburger-blog {
+  transform: translate(510px, -790px);
+}
+.hamburgerdate-blog {
+  transform: translate(507px, -795px);
+}
+
+.struggledate-blog {
+  transform: translate(32px, -865px);
+}
+
+#struggle-blog {
+  transform: translate(32px, -860px);
 }
