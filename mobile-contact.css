@@ -10,7 +10,7 @@ body {
   grid-template-areas:
     "main"
     "footer";
-  background-image: url(contact.jpg);
+  background: url(contact.jpg) center;
   background-size: cover;
 }
 
@@ -24,7 +24,7 @@ main {
 footer {
   color: white;
   grid-area: footer;
-  transform: translate(0px, 80px);
+  transform: translate(0px, 260px);
 }
 
 .form {
