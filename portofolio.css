@@ -1,64 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
 body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-template-areas:
     "header header "
+    "nav nav"
     "main aside"
     "footer footer ";
+  background-image: url(Sky.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  margin: auto;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Nav below */
+#hamburger-navigation {
+  width: 100%;
+}
+
+/* Display flex  */
+#items li {
+  display: inline;
+  padding-left: 200px;
+}
+
+#items a {
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+  flex-basis: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#items a:hover {
+  background-color: #f89b5d;
+  transition: 1.4s;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* To hide hamburger */
+#hamburger-navigation label,
+#hamburger {
+  display: none;
 }
 
 header {
-  background-color: blue;
   color: white;
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
   grid-area: header;
+  text-align: left;
+  font-size: 10px;
 }
 main {
-  background-color: darkblue;
-  color: white;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
   grid-area: main;
+  text-align: center;
+  margin-right: 50px;
 }
 aside {
-  background-color: lightgreen;
+  margin-top: 20px;
   grid-area: aside;
 }
 footer {
-  background-color: darkgreen;
   color: white;
   grid-area: footer;
 }
 
 main h1 {
   text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+main h2 {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
 }
 
 aside h1 {
   text-align: center;
+  font-size: 20px;
+  margin: 10px;
 }
 
 aside h2 {
-  font-size: 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
 }
 
-main h2 {
-  font-size: 20px;
+p {
+  text-align: center;
 }
 
 .founderimg {
   width: 400px;
   height: 200px;
+  margin-top: 25px;
+  margin-left: 120px;
 }
 .posterimg {
   width: 400px;
   height: 200px;
+  margin: 10px;
+  margin-bottom: 20px;
 }
 .passedimg {
   width: 400px;
   height: 200px;
+  margin-top: 20px;
 }
 
 .ukraineimg {
   width: 400px;
   height: 200px;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgb(206, 203, 203);
 }

@@ -8,10 +8,52 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
+    "nav"
     "main"
     "footer";
   background-image: url(contact.jpg);
   background-size: cover;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Nav below */
+#hamburger-navigation {
+  width: 100%;
+}
+
+/* Display flex  */
+#items li {
+  display: inline;
+  padding-left: 200px;
+}
+
+#items a {
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+  flex-basis: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#items a:hover {
+  background-color: #f89b5d;
+  transition: 1.4s;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* To hide hamburger */
+#hamburger-navigation label,
+#hamburger {
+  display: none;
 }
 
 main {

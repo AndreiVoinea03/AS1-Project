@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "Aside"
+    "main"
+    "footer";
+  background-image: url(Sky.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3000px;
+  margin: auto;
+}
+
+header {
+  grid-area: header;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main {
+  color: rgb(0, 0, 0);
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+  transform: translate(-490px, 0px);
+}
+footer {
+  color: white;
+  grid-area: footer;
+  transform: translate(0px, 800px);
+}
+#items a {
+  display: block;
+  transform: translate(0px, -30px);
+}
+
+/* For icon */
+#hamburger-navigation label {
+  color: white;
+  background: #f89b5d;
+  padding: 5px;
+  display: inline-block;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+/* toggle */
+#items {
+  display: none;
+}
+#hamburger-navigation input:checked ~ #items {
+  display: block;
+}
+
+.founderimg {
+  width: 300px;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 120px;
+}
+.posterimg {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.passedimg {
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.ukraineimg {
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+header h1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+aside h1 {
+  transform: translate(50px, 20px);
+}
+
+aside h2 {
+  transform: translate(70px, 0px);
+}
+
+aside p {
+  transform: translate(70px, 0px);
+}
+
+.participated {
+  transform: translate(120px, 0px);
+}

@@ -30,7 +30,6 @@ nav {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 main {
   color: rgb(206, 203, 203);
   grid-area: main;

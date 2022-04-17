@@ -8,6 +8,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
+    "nav"
     "main"
     "footer";
   background: url(contact.jpg) center;
@@ -59,4 +60,32 @@ footer {
 
 .btn:hover {
   background: red;
+}
+
+#items a {
+  display: block;
+  transform: translate(0px, -30px);
+}
+
+/* For icon */
+#hamburger-navigation label {
+  color: white;
+  background: #f89b5d;
+  padding: 8px;
+  display: inline-block;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+/* toggle */
+#items {
+  display: none;
+}
+#hamburger-navigation input:checked ~ #items {
+  display: block;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
 }
