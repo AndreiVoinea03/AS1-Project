@@ -44,41 +44,20 @@ footer {
   grid-area: footer;
 }
 
-/* Nav below */
-#hamburger-navigation {
-  width: 100%;
-}
-
-/* Display flex  */
-#items li {
-  display: inline;
-  padding-left: 200px;
-}
-
-#items a {
-  color: white;
-  text-align: center;
-  flex-grow: 1;
-  text-decoration: none;
-  flex-basis: 0;
+main h1 {
+  font-size: 30px;
   font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bolder;
+  text-transform: uppercase;
+  transform: translate(0px, 150px);
 }
 
-#items a:hover {
-  background-color: #f89b5d;
-  transition: 1.4s;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+main p {
+  margin-top: 20px;
+  font-family: sans-serif;
+  transform: translate(0px, 150px);
 }
 
-/* To hide hamburger */
-#hamburger-navigation label,
-#hamburger {
-  display: none;
-}
+/* Styling liks below */
 
 .name:link {
   color: rgb(206, 203, 203);
@@ -107,15 +86,76 @@ footer {
   transform: translate(0px, 360px);
 }
 
-main h1 {
-  font-size: 30px;
+/* Nav below  system */
+#hamburger-navigation {
+  width: 100%;
+}
+
+/* Display flex  */
+#items li {
+  display: inline;
+  padding-left: 200px;
+}
+
+#items a {
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: none;
+  flex-basis: 0;
   font-family: sans-serif;
-  text-transform: uppercase;
-  transform: translate(0px, 150px);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#items a:hover {
+  background-color: #f89b5d;
+  transition: 1.4s;
+  padding-top: 20px;
+}
+
+/* To hide hamburger */
+#hamburger-navigation label,
+#hamburger {
+  display: none;
+}
+
+main h1 {
+  animation-duration: 2.5s;
+  animation-name: h1slideanimate;
+  animation-iteration-count: 2;
+}
+
+@keyframes h1slideanimate {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  100% {
+    font-size: 1000%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
 }
 
 main p {
-  margin-top: 20px;
-  font-family: sans-serif;
-  transform: translate(0px, 150px);
+  animation-duration: 1.5s;
+  animation-name: pslideanimate;
+}
+
+@keyframes pslideanimate {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
 }

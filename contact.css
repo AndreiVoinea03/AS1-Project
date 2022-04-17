@@ -18,6 +18,20 @@ body {
 nav {
   grid-area: nav;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+main {
+  color: white;
+  grid-area: main;
+  text-align: center;
+  padding: 57px 0;
+}
+
+footer {
+  color: white;
+  grid-area: footer;
+  transform: translate(0px, 80px);
 }
 
 /* Nav below */
@@ -43,30 +57,15 @@ nav {
 }
 
 #items a:hover {
-  background-color: #f89b5d;
+  background-color: #ff0000;
+  padding: 10px;
   transition: 1.4s;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 /* To hide hamburger */
 #hamburger-navigation label,
 #hamburger {
   display: none;
-}
-
-main {
-  color: white;
-  grid-area: main;
-  text-align: center;
-  padding: 57px 0;
-}
-
-footer {
-  color: white;
-  grid-area: footer;
-  transform: translate(0px, 80px);
 }
 
 .form {
@@ -101,4 +100,16 @@ footer {
 
 .btn:hover {
   background: red;
+}
+
+.emailme {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+.emailme:hover {
+  padding: 10px;
+  background-color: red;
+  transition: 2.3s;
 }

@@ -41,27 +41,13 @@ footer {
   grid-area: footer;
 }
 
-#items a {
-  display: block;
-  transform: translate(0px, -30px);
+main h1 {
+  transform: translate(0px, 100px);
+  text-transform: uppercase;
 }
 
-/* For icon */
-#hamburger-navigation label {
-  color: white;
-  background: #f89b5d;
-  padding: 8px;
-  display: inline-block;
-  font-style: italic;
-  font-size: 1.3em;
-}
-
-/* toggle */
-#items {
-  display: none;
-}
-#hamburger-navigation input:checked ~ #items {
-  display: block;
+main p {
+  transform: translate(0px, 100px);
 }
 
 .name:link {
@@ -89,11 +75,67 @@ footer {
   transform: translate(0px, 410px);
 }
 
+/* Navigation system below */
+
+#items a {
+  display: block;
+  transform: translate(0px, -30px);
+}
+
+/* For icon */
+#hamburger-navigation label {
+  color: white;
+  background: #f89b5d;
+  padding: 10px;
+  display: inline-block;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+/* toggle */
+#items {
+  display: none;
+}
+#hamburger-navigation input:checked ~ #items {
+  display: block;
+}
+
 main h1 {
-  transform: translate(0px, 100px);
-  text-transform: uppercase;
+  animation-duration: 2.5s;
+  animation-name: h1slideanimate;
+  animation-iteration-count: 2;
+}
+
+@keyframes h1slideanimate {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  100% {
+    font-size: 500%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
 }
 
 main p {
-  transform: translate(0px, 100px);
+  animation-duration: 1.5s;
+  animation-name: pslideanimate;
+}
+
+@keyframes pslideanimate {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
 }

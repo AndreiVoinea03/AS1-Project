@@ -25,6 +25,7 @@ body {
 header {
   grid-area: header;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -44,9 +45,27 @@ footer {
   grid-area: footer;
   transform: translate(0px, 800px);
 }
+header h1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+aside h1 {
+  transform: translate(50px, 20px);
+}
+
+aside h2 {
+  transform: translate(70px, 0px);
+}
+
+aside p {
+  transform: translate(70px, 0px);
+}
+
 #items a {
   display: block;
-  transform: translate(0px, -30px);
+  transform: translate(0px, -10px);
 }
 
 /* For icon */
@@ -90,24 +109,6 @@ footer {
   height: 200px;
   margin-top: 30px;
   margin-left: 120px;
-}
-
-header h1 {
-  font-size: 20px;
-  text-align: center;
-  padding: 20px;
-}
-
-aside h1 {
-  transform: translate(50px, 20px);
-}
-
-aside h2 {
-  transform: translate(70px, 0px);
-}
-
-aside p {
-  transform: translate(70px, 0px);
 }
 
 .participated {

@@ -17,7 +17,7 @@ body {
 header {
   background-color: rgb(240, 240, 240);
   color: white;
-  padding: 50px;
+  padding: 30px;
   grid-area: header;
   text-align: center;
 }
@@ -28,13 +28,20 @@ main {
 }
 
 footer {
-  background-color: darkgreen;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   grid-area: footer;
-  transform: translate(0px, 0px);
+  transform: translate(0px, -500px);
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 .intro-text {
+  margin-top: 20px;
   bottom: 40px;
   transform: translate(0px, -30px);
   font-size: 20px;
@@ -46,6 +53,7 @@ header p {
   transform: translate(0px, -15px);
   font-size: 15px;
   color: black;
+  margin-top: 20px;
 }
 
 main h1 {
@@ -111,6 +119,10 @@ main h1 {
   transform: translate(35px, -890px);
 }
 
+.myarticle {
+  display: none;
+}
+
 .read-struggle {
   transform: translate(190px, -860px);
 }
@@ -127,11 +139,6 @@ a:link {
 
 a:visited {
   color: rgb(0, 0, 0);
-}
-
-nav {
-  grid-area: nav;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Nav below */
@@ -159,9 +166,7 @@ nav {
 #items a:hover {
   background-color: #f89b5d;
   transition: 1.4s;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px;
 }
 
 /* To hide hamburger */
