@@ -82,24 +82,48 @@ main h1 {
 }
 
 #studying-blog {
-  transform: translate(265px, -265px);
+  transform: translate(265px, -255px);
 }
 
 .studyingdate-blog {
   transform: translate(265px, -270px);
+  color: orangered;
+  font-size: 15px;
 }
 
 #hamburger-blog {
-  transform: translate(510px, -790px);
+  transform: translate(510px, -800px);
 }
 .hamburgerdate-blog {
-  transform: translate(507px, -795px);
+  transform: translate(507px, -815px);
+  color: orangered;
+  font-size: 15px;
 }
 
 .struggledate-blog {
-  transform: translate(32px, -865px);
+  transform: translate(32px, -905px);
+  color: orangered;
+  font-size: 15px;
 }
 
 #struggle-blog {
-  transform: translate(32px, -860px);
+  transform: translate(35px, -890px);
+}
+
+.read-struggle {
+  transform: translate(190px, -860px);
+}
+
+.read-hamburger {
+  transform: translate(675px, -770px);
+}
+.read-study {
+  transform: translate(430px, -225px);
+}
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
 }
